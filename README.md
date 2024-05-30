@@ -12,5 +12,5 @@ How to convert currencies and calculate expenses?
 
 API Layer - currency_data
 
-How was built?
+How was it built?
 Python, Flask, wtforms, HTML, CSS, JS
