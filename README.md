@@ -11,3 +11,6 @@ Create different categories, change currencies, and modify expenses
 How to convert currencies and calculate expenses?
 
 API Layer - currency_data
+
+How was built?
+Python, Flask, wtforms, HTML, CSS, JS
