@@ -9,7 +9,7 @@ import requests, json
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.urandom(16).hex()
-app.config["MONGO_URI"] = "mongodb+srv://steven:Ilovedenver303!@cluster0.rjmtwo5.mongodb.net/db?retryWrites=true&w=majority"
+app.config["MONGO_URI"] = "Insert URI Here"
 mongo = PyMongo(app)
 
 
