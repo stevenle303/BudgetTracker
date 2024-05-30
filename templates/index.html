@@ -1,0 +1,38 @@
+{% extends "template.html" %}
+{% block content %}
+<style>
+table, th, td {
+  border: 1px solid;
+  width: 70%;
+}
+</style>
+  <header id="hero" class="hero">
+    <div class="flex-container w-container">
+      <div>
+        <h1>Add an expense</h1>
+        <a href="{{ url_for('addExpenses') }}" class="button-8 w-button">Add an Expense</a>
+      </div>
+    </div>
+  </header>
+<section id="feature-section" class="feature-section">
+    <div class="flex-container w-container">
+      <div>
+        <h2>Track your expenses</h2>
+        <h3>Total Cost</h3>
+        <h3 style="color: #ea384c">${{ '%0.2f'| format(expenses|float) }}</h3>
+
+
+        <h3>By category</h3>
+        {% for i in expensesByCategory %}
+        <table align="center">
+          <tr>
+          <td style="font-weight: bold">{{ i[0] }}</td> <td><p style="color: #ea384c">${{ i[1] }}</p></td>
+          </tr>
+
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
